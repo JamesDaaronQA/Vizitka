@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Ветер мачту гнул, ветер парус рвал</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta  =viewport content="width=device-width, initial-scale=1.0" />
+    <link href="./normalize.css" rel="stylesheet" >
+    <link href="./style.css" rel="stylesheet">
+  </head>
+  <body>
+    <header class="header">
+      <img src="./avatar.png" alt="avatar" class="header__avatar" />
+      <h1 class="header__title">Юрий Барейша</h1>
+      <h3 class="header__subtitle">С корабля упал</h3>
+    </header>
+    <main>
+      <section class="links">
+        <h2 class="links__header">Доступен (временами)</h2>
+        <ul class="links__container">
+          <li class="links__link">
+            <p class="links__title">Телеграм</p>
+            <a class="linsk__link" href="joke_link.html">@totallytelegramlink</a>
+          </li>
+          <li class="links__link">
+            <p class="links__title">Эл. почта</p>
+            <a class="linsk__link" href="mailto:jamesdaaron@yandex.ru"
+              >jamesdaaron@yandex.ru</a
+            >
+          </li>
+        </ul>
+      </section>
+      <section class="links">
+        <h2 class="links__header">What do I do in the shadows (Реальный программист)</h2>
+        <ul class="links__container">
+          <li class="links__link">
+            <p class="links__title">Учусь в</p>
+            <a class="linsk__link" href="https://qa.studio/">qa.studio/</a>
+          </li>
+          <li class="links__link">
+            <p class="links__title">Играю 🎮 </p>
+            <a class="linsk__link" href="https://store.steampowered.com/">в Стиме</a>
+          </li>
+          <li class="links__link">
+            <p class="links__title">Тренируюсь </p>
+            <a class="linsk__link" href="https://maps.app.goo.gl/F7Ky7NTyeMm1gq5v7">вот тут вот 📌</a>
+          </li>
+          <li class="links__link">
+            <p class="links__title">Пишу</p>
+            <a class="linsk__link" href="index.html">визитку в html</a>
+          </li>
+        </ul>
+      </section>
+    </main>
+    <footer>
+
+  <button id="notifyBtn" type = "button" class="button-link" >А?</button>
+
+  <div id="notification">
+    <span>Что?</span>
+    <button id="closeBtn" class="button-close">Кто здесь?</button>
+  </div>
+
+  <script>
+    const notifyBtn = document.getElementById('notifyBtn');
+    const notification = document.getElementById('notification');
+    const closeBtn = document.getElementById('closeBtn');
+
+    // Показываем уведомление
+    notifyBtn.addEventListener('click', () => {
+      notification.style.display = 'block';
+    });
+
+    // Скрываем уведомление
+    closeBtn.addEventListener('click', () => {
+      notification.style.display = 'none';
+    });
+  </script>
+
+
+      </footer>
+  </body>
+</html>
